@@ -2,14 +2,13 @@ import os
 
 
 class Library:
-    LIB_PATH = "./book"
+    LIB_PATH = "./books"
 
     def __init__(self, book_name):
         self.name = "Digital Library"
         self.book_name = book_name.strip()
         self.__file_path = os.path.join(self.LIB_PATH, f"{book_name.lower()}")
 
-    # Returns book from library by name
     def find_book(self):
         try:
             with open(self.__file_path) as file:
