@@ -3,3 +3,6 @@ books/*
 
 # Vscode
 .vscode/
+
+# Python
+__pycache__/
